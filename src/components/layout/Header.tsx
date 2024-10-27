@@ -17,6 +17,9 @@ const Header = () => {
           <li className="text-semibold text-sm sm:text-xl">
             <Link href={"/#featured"}>Featured</Link>
           </li>
+          <li className="text-semibold text-sm sm:text-xl">
+            <Link href={"/#contact"}>Contact</Link>
+          </li>
         </ul>
       </div>
     </div>

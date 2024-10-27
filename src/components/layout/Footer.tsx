@@ -12,7 +12,11 @@ const links = [
   },
   {
     name: "Featured",
-    link: "#featured",
+    link: "/#featured",
+  },
+  {
+    name: "Contact",
+    link: "/#contact",
   },
 ];
 const categories = [
