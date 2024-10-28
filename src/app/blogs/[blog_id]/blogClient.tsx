@@ -21,7 +21,6 @@ const BlogClient = ({ blog_id }: { blog_id: string }) => {
     author: "",
   });
 
-  // Find the blog by its id
   const blog = blogs.find((blog: IBlogPost) => blog.id === blog_id);
 
   const updatedBlogs = blogs.map((blog: IBlogPost) => {
@@ -29,7 +28,7 @@ const BlogClient = ({ blog_id }: { blog_id: string }) => {
       return {
         ...blog,
         comments: [
-          ...(blog.comments || []), // Use empty array as fallback if comments are undefined
+          ...(blog.comments || []),
           {
             id: crypto.randomUUID(),
             author: comment.author,
